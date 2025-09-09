@@ -1,3 +1,2 @@
-apache-airflow-providers-postgres==5.11.0 
+apache-airflow-providers-postgres==5.11.0
 pandas==2.1.4
-python-dotenv==1.0.0

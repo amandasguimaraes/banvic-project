@@ -1,0 +1,4 @@
+/logs/
+/dbdata/
+/airflow_db/
+/dags/example_dags/
