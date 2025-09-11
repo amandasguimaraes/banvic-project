@@ -25,10 +25,10 @@ Siga os passos abaixo para iniciar o ambiente do Airflow e rodar o pipeline.
     cd banvic-project/
     ```
 
-2.  **Inicie o ambiente Docker:**
-    Este comando irá construir e iniciar os serviços do Airflow, incluindo o webserver, o scheduler e o banco de dados PostgreSQL.
+2.  **Inicie o ambiente Astro Dev:**
+    Este comando irá construir e iniciar os serviços do Airflow, incluindo o webserver, o scheduler e o banco de dados.
     ```bash
-    docker-compose up -d
+    astro dev start
     ```
 
 3.  **Acesse a Interface do Airflow:**

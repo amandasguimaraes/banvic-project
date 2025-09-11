@@ -28,7 +28,7 @@ services:
       POSTGRES_PASSWORD: v3rysecur&pas5w0rd
     volumes:
       - ./dbdata:/var/lib/postgresql/data
-      - ./sql/banvic.sql:/docker-entrypoint-initdb.d/banvic.sql
+      - ./sql:/docker-entrypoint-initdb.d
     ports:
       - 5433:5432
     networks:

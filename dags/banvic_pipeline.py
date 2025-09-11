@@ -10,8 +10,9 @@ from airflow.decorators import task, task_group
 from airflow.operators.empty import EmptyOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 
-DATALAKE = os.getenv("DATALAKE", "/opt/airflow/extracted_data")
-SOURCE_CSV = os.getenv("SOURCE_CSV", "/opt/airflow/data/transacoes.csv")
+AIRFLOW_HOME = os.getenv("AIRFLOW_HOME", "/usr/local/airflow")
+DATALAKE = os.getenv("DATALAKE", f"{AIRFLOW_HOME}/datalake")
+SOURCE_CSV = os.getenv("SOURCE_CSV", f"{AIRFLOW_HOME}/data/transacoes.csv")
 
 TABLES = ["agencias", "clientes", "colaboradores", "contas", "propostas_credito"]
 
