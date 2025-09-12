@@ -46,3 +46,9 @@ A solução apresentada é a versão 01, focada em atender aos requisitos. Para 
 
 -   **Extração Containerizada:** Utilizar o `DockerOperator` do Airflow para rodar as extrações em contêineres separados. Isso isolaria as dependências de cada extração e evitaria a sobrecarga do scheduler do Airflow.
 -   **Melhoria na Ingestão de Dados:** Substituir o Pandas, que é ideal para volumes menores, por uma ferramenta de ingestão escalável como o Meltano ou um framework de extração otimizado para big data.
+
+### Observações
+
+Este projeto foi construído com base em um processo de aprimoramento contínuo. Inicialmente, o ambiente do Airflow foi configurado com Docker Compose. Buscando uma solução mais moderna e eficiente, com a ajuda de um amigo, tentei migrar a orquestração para a Astro CLI. Criei uma nova branch para essa tentativa, mas enfrentei problemas de permissão e conectividade. Mesmo após diversas tentativas de solução, a migração não foi bem-sucedida.
+
+Diante desses desafios, e seguindo um novo conselho do meu amigo, decidi voltar para a configuração original, mas com melhorias significativas. Criei uma nova branch para otimizar o docker-compose.yml, estabelecendo uma rede comum para os serviços e outras melhorias. Essa abordagem me permitiu tentar resolver os problemas de infraestrutura.
